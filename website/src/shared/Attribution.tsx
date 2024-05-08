@@ -4,8 +4,6 @@ import { useTranslation } from 'react-i18next';
 export const Attribution = () => {
   const { t } = useTranslation();
 
-
-
   return (
     <Container>
       <Typography
@@ -14,7 +12,7 @@ export const Attribution = () => {
         color="textSecondary"
         align="center"
       >
-                {t('attribution.createdBy')}{' '}
+        {t('attribution.createdBy')}{' '}
         <Link href="https://github.com/jhaals/yopass">Jhaals Github</Link>
       </Typography>
       <Typography
@@ -33,7 +31,9 @@ export const Attribution = () => {
         align="center"
       >
         {t('attribution.Support')}{' '}
-        <Link href="https://teamviewer.headitsolutions.ch">TeamViewer HEAD IT</Link>
+        <Link href="https://teamviewer.headitsolutions.ch">
+          TeamViewer HEAD IT
+        </Link>
       </Typography>
     </Container>
   );
